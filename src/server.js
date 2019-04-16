@@ -31,6 +31,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/files", express.static(path.resolve(__dirname,'..','tmp')));
 
-app.use(require("./routes"));//
+server.use(require("./routes"));//
 
 server.listen(process.env.PORT || "3333");
