@@ -17,6 +17,6 @@ routes.post("/boxes/:id/files",
     multer(multerConfig).single('file'),
     FileController.store
 );
-routes.get("/files", FileController.show);
+// routes.get("/files", FileController.show);
 
 module.exports = routes;
